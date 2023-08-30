@@ -1,0 +1,177 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* navbar */
+
+.containerNavbar{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+
+li{
+    padding: 20px;
+    list-style: none;
+    
+}
+
+.containerLien{
+    display: flex;
+}
+
+.lien{
+    display: flex;
+    justify-content: space-around;
+}
+
+#imageNavbar{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+
+#imageUser{
+    width: 40px;
+    height: 40px;
+}
+
+#imageCard{
+    width: 40px;
+    height: 40px;
+}
+
+.containerUtilUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1px;
+}
+
+.utilUser{
+    padding: 10px;
+}
+
+/* Image Promotion */
+
+.containerPromotion{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.divPromotion{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.divPromotion img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Bar split */
+
+.barSplit{
+    height:2px;
+    width: 100vw;
+    background-color: rgb(63, 18, 48);
+    display: flex;
+}
+
+.promotionText{
+    width: 200px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+.barSplitTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:38px;
+    width: 100vw;
+    background-color: rgb(223, 223, 223);
+}
+
+/* InputSearch */
+
+.containerInput{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 15px 0px;
+}
+
+#inputSearch{
+    display: flex;
+    height: 35px;
+    width: 400px;
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    outline: none;
+    background-color: rgb(223, 223, 223);
+    color: white;
+    font-weight: 300;
+}
+
+/* Grid */
+
+#grid{
+    padding: 100px 10% 100px 20% ;
+    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(350px, 1fr));
+    grid-auto-rows: 800px;
+    gap: 40px 20px;
+}
+
+.grid-pict{
+    overflow: hidden;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.grid-pict img{
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    animation-name: enlargementDivOut;
+    animation-duration: 1s;
+    transition: transform 0.4s ease;
+
+    &:hover{
+        animation: enlargementDiv 0.6s;
+        animation-fill-mode: forwards;
+        border-radius: 50px;
+}
+
+}
+
+@keyframes enlargementDivOut {
+    from{
+        transform: scale(1.05);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes enlargementDiv{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.05);
+    }
+}
