@@ -7,61 +7,149 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="barSplitTop">
+    <div class="barSplitTop" style="overflow: hidden">
         <div class="promotionText">Retour Gratuit durant 30 jours</div>
     </div>
 
     <div class="containerInput">
-    <input id="inputSearch" placeholder="   Search">
+        <input id="inputSearch" placeholder="   Search">
     </div>
 
     <div class="barSplit"></div>
     <div class="containerNavbar">
 
-        <img id="imageNavbar" src="./tennis.png" alt="basket">
+        <div>
+            <p id="logo">JL</p>
+        </div>
     
         <div class="containerLien">
         <div class="lien">
-        <li>Heel</li>
+        <a class="active" href="./page/heel.html"><li>Heel</li></a>
         </div>
         <div class="lien">
-        <li>Basket</li>
+        <a class="active" href="./page/basket.html"><li>Basket</li></a>
         </div>
         <div class="lien">
-        <li>Ankle boot</li>
+        <a class="active" href="./page/ankleBoot.html"><li>Ankle boot</li></a>
         </div>
         <div class="lien">
-        <li>Boot</li>
+        <a class="active" href="./page/boot.html"><li>Boot</li></a>
     </div>       
     </div>
     <div class="containerUtilUser">
         <div class="utilUser">
-    <img id="imageUser" src="./user.png" alt="user">
+    <img id="imageUser" src="./assets/img/user.png" alt="user">
         </div>
         <div class="utilUser">
-    <img id="imageCard" src="./panier.png" alt="card">
+    <img id="imageCard" src="./assets/img/panier.png" alt="card">
     </div>
     </div>
     </div>
 
     <div class="barSplit"></div>
 
+    <video   width="100%" autoplay loop>
+        <source src="/media/cc0-videos/flower.webm" type="video/webm" />
+      
+        <source src="./pexels_videos_1943413 (1080p).mp4" type="video/mp4" />
+      
+        Download the
+        <a href="/media/cc0-videos/flower.webm">WEBM</a>
+        or
+        <a href="/media/cc0-videos/flower.mp4">MP4</a>
+        video.
+      </video>
+      
+
+    <!-- <div class="containerHomeSearch">
+    <img src="./assets/img/talon1.jpg" alt="">
+    </div> -->
    
 
     <div id="grid">
         <div class="grid-pict">
-            <img src="./talon5.jpg" alt="talon">
+            <img src="./assets/img/talon5.jpg" alt="talon">
         </div>
         <div class="grid-pict">
-            <img src="./talon2.jpg" alt="talon">
+            <img src="./assets/img/talon2.jpg" alt="talon">
         </div>
         <div class="grid-pict">
-            <img src="./talon3.jpg" alt="talon">
+            <img src="./assets/img/talon3.jpg" alt="talon">
         </div>
         <div class="grid-pict">
-            <img src="./talon4.jpg" alt="talon">
+            <img src="./assets/img/talon4.jpg" alt="talon">
         </div>
 
     </div>
 </body>
+
+<footer>
+    <div class="containerNavFooter">
+       
+        <div class="containerNavAssist">
+            <div>
+                <p id="logo">JL</p>
+            </div>
+            <div class="navAssist">
+               
+                <div>
+                <ul>
+                    <h2>Nos Boutiques</h2>
+                    <li>Trouver une boutique</li>
+                </ul>
+                </div>
+                <div>
+                <ul>
+                    <h2>Assistance</h2>
+                    <li>Suivi de commande</li>
+                    <li>Guide des tailles</li>
+                    <li>Livraison et retours</li>
+                    <li>Entretien et réparation</li>
+                    <li>FAQ</li>
+                    <a href="./page/formulaire.html"><li>Nous contacter</li></a>
+                    <li>Service sur mesure</li>
+                    <li>Services exclusifs</li>
+                </ul>
+                </div>
+                <div>
+                <ul>
+                    <h2>JL SHOES</h2>
+                    <li>Conditions générales</li>
+                    <li>Politique de confidentialité</li>
+                    <li>Qui sommes-nous ?</li>
+                    <li>Carrières</li>
+                    <li>Relations investisseurs</li>
+                    <li>Manifeste de durabilité</li>
+                    <li></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="barSplitBottom"></div>
+
+    <div class="containerIconSocial">
+        <div class="containerDivIconsSocial">
+            <div class="socialNetwork">
+            <li><img src="./assets/img/instagram.png" alt=""></li>
+            </div>
+            <div class="socialNetwork">
+            <li><img src="./assets/img/twitter.png" alt=""></li>
+            </div>
+        </div>
+        
+        <div class="choiceLangage">
+            France | FR
+        </div>
+    </div>
+
+    <div class="barSplitBottom"></div>
+
+    <div class="containerCopyright">
+    <div class="copyright">
+        <p>© 2023 JL Shoes</p>
+    </div>
+    </div>
+</footer>
 </html>
